@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Spydea</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+<!-- ======= NAVBAR ======= -->
+<header class="sticky top-0 z-50 bg-white shadow">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+    
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2 text-xl font-bold">
+      <span class="text-2xl">⚡</span> Spydea
+    </a>
+
+    <!-- Desktop menu -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="../index.html" class="hover:text-blue-600">Home</a>
+      <a href="./about.html" class="hover:text-blue-600">About</a>
+      <a href="./blog.html" class="hover:text-blue-600">Blog</a>
+
+      <!-- Pages dropdown (desktop) -->
+
+      <button class="hover:text-blue-600">EN ▼</button>
+    </nav>
+
+    <!-- Desktop actions -->
+    <div class="hidden md:flex gap-2">
+      <a href="/pages/login.html" class="border px-4 py-1 rounded hover:bg-gray-100">Login</a>
+      <a href="/pages/getstarted.html" class="bg-black text-white px-4 py-1 rounded hover:bg-gray-800">Get Started</a>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button id="btn-mobile-menu" class="md:hidden text-2xl focus:outline-none">☰</button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-3 text-sm">
+    <a href="../index.html" class="block hover:text-blue-600">Home</a>
+    <a href="./about.html" class="block hover:text-blue-600">About</a>
+    <a href="./blog.html" class="block hover:text-blue-600">Blog</a>
+
+    <!-- Pages mobile submenu -->
+
+    <a href="#" class="block hover:text-blue-600">EN ▼</a>
+
+    <div class="flex flex-col gap-2 pt-2">
+      <a href="/pages/login.html" class="border px-4 py-1 rounded hover:bg-gray-100 text-center">Login</a>
+      <a href="/pages/getstarted.html" class="bg-black text-white px-4 py-1 rounded hover:bg-gray-800 text-center">Get Started</a>
+    </div>
+  </div>
+</header>
+<!-- ===== END NAVBAR ===== -->
+
+<!-- Main Content -->
+<main class="flex-grow">
+  <!-- Hero Section -->
+  <section class="relative bg-white py-8 text-center z-50">
+    <div class="absolute bottom-0 left-0 w-full h-8 bg-white transform skew-y-3 origin-bottom z-[-1]"></div>
+    <div class="max-w-2xl mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl  font-bold text-gray-900">Login Spydea</h1>
+
+    </div>
+  </section>
+
+  <!-- Login Card -->
+  <section class="py-16 flex justify-center">
+    <div class="w-full max-w-md p-8 bg-white shadow-xl rounded-2xl border">
+      <!-- Icon -->
+      <div class="flex justify-center mb-4">
+        <div class="bg-yellow-100 p-4 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 11c0 .552-.448 1-1 1s-1-.448-1-1 .448-1 1-1 1 .448 1 1zm0 0v2m0-4a4 4 0 11-8 0 4 4 0 018 0zM6 20h.01M6 20a2 2 0 00-2-2H4a2 2 0 000 4h.01a2 2 0 002-2z" />
+          </svg>
+        </div>
+      </div>
+
+      <h2 class="text-2xl font-bold text-center mb-2">Login</h2>
+      <p class="text-center text-gray-500 mb-6 text-sm">
+        Donec rutrum congue leo eget malesuada. Sed porttitor nibh.
+      </p>
+
+      <button class="w-full flex items-center justify-center border border-gray-300 rounded-md py-2 text-sm font-medium mb-4 hover:bg-gray-100">
+        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="h-5 w-5 mr-2" />
+        Login With Google
+      </button>
+
+      <div class="flex items-center my-4">
+        <hr class="flex-grow border-gray-300" />
+        <span class="px-3 text-gray-400 text-sm">Or Login With Email</span>
+        <hr class="flex-grow border-gray-300" />
+      </div>
+
+      <div class="mb-4">
+        <label class="block text-sm font-semibold mb-1">Email Address</label>
+        <input type="email" placeholder="Your Email Address"
+               class="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      </div>
+
+      <div class="mb-6">
+        <label class="block text-sm font-semibold mb-1">Password</label>
+        <input type="password" placeholder="Enter Your Password"
+               class="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" />
+      </div>
+
+      <button class="w-full bg-black text-white py-2 rounded-md hover:bg-gray-800 transition">Login</button>
+
+      <p class="text-center text-sm mt-4">Don't have any account? 
+        <a href="#" class="text-blue-600 hover:underline">Sign Up</a>
+      </p>
+      <p class="text-center text-sm mt-1">
+        Forgot your password? 
+        <a href="#" class="text-blue-600 hover:underline">Reset Password</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-100 text-center text-sm text-gray-600 py-6">
+  © 2025 Spydea. All rights reserved.
+</footer>
+<!-- Toggle Script -->
+<script>
+  document.getElementById('btn-mobile-menu').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
